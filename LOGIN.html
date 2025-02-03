@@ -1,0 +1,41 @@
+<html>
+<head>
+<tiltle></title>
+</head>
+<body style="background-color:pink;">
+<tr>
+<i><center><h1>LOG IN</h1><i>
+<br>
+<br>
+<h2>Username</h2>
+<input type="text" id="user">
+<br>
+<br>
+<h2>password</h2>
+<input type="password" id="pass">
+<br>
+<br>
+<button onclick="JF()">SUBMIT</button>
+<br>
+</br>
+<a href="REGISTRATION.html"><p>Don't have an account?</p> Sign Up</a>
+<br>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</div>
+<script>
+function JF(){
+let username = document.getElementById("user").value;
+let password = document.getElementById("pass").value;
+let uname = localStorage.getItem("username");
+let pass = localStorage.getItem("password");
+if(username == uname && password == pass)
+{alert("you are valid");
+window.location.href="index.html";
+}
+else{ alert("intruder");} 
+}
+</script>
+</center>
+</head>
+</html>
+
